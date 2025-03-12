@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Time Table</title>
+</head>
+
+<style>
+   table,th,td{
+    border:2px solid red;
+    border-collapse:collapse;
+           }
+ 
+
+  tr:nth-child(odd){
+         background-color:gray;         
+   
+             }
+  tr:hover{
+      background-color:black;
+         color:white;     
+           }
+
+
+ul li{
+ font-size:25px;
+}
+
+
+.S1{
+ position:relative;
+ display:inline-block;
+ color:#EF0107;
+ cursor:pointer;
+&:hover{
+ color:green;
+  }
+ 
+}
+
+.science{
+ display:none;
+ color: brown; 
+ cursor:text;
+}
+
+.science p::selection{
+  background-color:black;
+  color:white;
+  }
+
+
+
+ .S1:hover  .science{
+ display:block;
+ 
+}
+
+.M1{
+ color:blue;
+ cursor:pointer;
+&:hover{
+ color:green;
+ }
+}
+
+
+.maths{
+ display:none;
+ color:red;
+ cursor:text;
+}
+
+.maths p::selection{
+ background-color:black;
+ color:white;
+  }
+
+
+
+.M1:hover .maths{
+ display:block;
+}
+
+
+.E1{
+ color:#F400A1;
+ cursor:pointer;
+&:hover{
+color:green;
+  }
+ }
+
+
+.eng{
+ display:none;
+ cursor:text;
+ color:#D017FD;
+ }
+
+
+.eng p::selection{
+ background-color:black;
+ color:white;
+}
+
+
+.E1:hover .eng{
+ display:block;
+}
+
+
+.S2{
+ color:#393B44;
+  }
+
+
+.socio{
+  display:none; 
+  }
+
+
+.S2:hover .socio{
+ display:block;
+   }
+
+
+
+.psy{
+ display:none;
+ color:;
+ }
+
+.P1{
+ color:#fdd017;
+ }
+
+.P1:hover .psy{
+ display:block;
+}
+
+
+
+</style>       
+
+<body>
+<table>
+   <tr>
+    <th rowspan="2">Days</th>
+    <th colspan="6">Time</th>
+   </tr>
+  <tr>
+    <th class="one">8:00</th>
+    <th>9:00</th>
+    <th>10:00</th>
+    <th width="20%">11:00</th>
+    <th>11:30</th>
+    <th>12:30</th>
+  </tr> 
+ <tr>
+   <th>Mon</th>
+   <td>Course 1</td>
+   <td>Course 2</td>
+   <td>Course 3</td>
+   <th rowspan="5">B<br>R<br>E<br>A<br>K<br></th>
+   <td> Course 5</td>
+ <td></td>
+ </tr> 
+<tr>
+  <th>Tue</th>
+  <td colspan="2"> </td>
+  <td>Course 2</td>
+  <td>Course 4</td>
+  <td>Course 1</td>
+</tr>
+<tr>
+  <th>Wed</th>
+  <td>Course 3</td>
+  <td colspan="2"> </td>
+  <td>Course 2</td>
+<td></td>
+</tr>
+ <tr>
+   <th>Thr</th>
+   <td rowspan="2">Course 4</td>
+   <td>Course 2</td>
+   <td>Course 3</td>
+   <td colspan="2" rowspan="2"><center>Thesis</center></td>
+ </tr> 
+<tr>
+   <th>Fri</th>
+    <td></td>
+    <td>Course 1</td>   
+</tr>
+</table>
+
+
+<ul>
+<div class="S1">
+ <li>Course 1 = Science</li>
+<div class="science">
+<p>Science is a systematic discipline that builds and organises knowledge in the form of testable hypotheses and predictions about the universe.[1][2] Modern science is typically divided into two or three major branches:[3] the natural sciences (e.g., physics, chemistry, and biology), which study the physical world; and the behavioural sciences (e.g., economics, psychology, and sociology), which study individuals and societies.</p>
+</div>
+</div>
+ 
+<div class="M1">
+ <li>Course 2 = Mathematics</li>
+<div class="maths">
+<p>Mathematics is a field of study that discovers and organizes methods, theories and theorems that are developed and proved for the needs of empirical sciences and mathematics itself. There are many areas of mathematics, which include number theory (the study of numbers), algebra (the study of formulas and related structures), geometry (the study of shapes and spaces that contain them), analysis (the study of continuous changes), and set theory (presently used as a foundation for all mathematics).</p>
+</div>
+</div>
+
+
+<div class="E1">
+ <li>Course 3 = English</li>
+<div class="eng">
+<p>English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones, originated in early medieval England on the island of Great Britain.The namesake of the language is the Angles, one of the ancient Germanic peoples that migrated to Britain. </p>
+</div>
+</div>
+
+
+<div class="S2">
+ <li>Course 4 = Sociology</li>
+<div class="socio">
+<p>Sociology is the scientific study of human society that focuses on society, human social behavior, patterns of social relationships, social interaction, and aspects of culture associated with everyday life.[1][2][3] Regarded as a part of both the social sciences and humanities, sociology uses various methods of empirical investigation and critical analysis[4]: 3–5  to develop a body of knowledge about social order and social change.</p>
+</div>
+</div>
+
+
+<div class="P1">
+ <li>Course 5 = psychology</li>
+<div class="psy">
+<p>Psychology is the scientific study of mind and behavior.[1][2] Its subject matter includes the behavior of humans and nonhumans, both conscious and unconscious phenomena, and mental processes such as thoughts, feelings, and motives. Psychology is an academic discipline of immense scope, crossing the boundaries between the natural and social sciences.</p>
+</div>
+</div>
+</ul>
+
+
+</body>
+</html>
+
+
+
+
+
+
